@@ -1,0 +1,22 @@
+.App {
+  background: #E5E5E5;
+  padding: 40px 250px 0 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.App-section {
+  bottom: 0;
+  flex: 1;
+  /* height: calc(100vh - 150px); */
+  background: #fafafa;
+  border-radius: 10px 10px 0 0;
+  padding: 64px 168px;
+}
