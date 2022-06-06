@@ -1,16 +1,14 @@
 import metaMaskLogo from './../Assets/metamask.png';
-import { useState } from 'react';
 
-function ConnectWallet() {
-
-  const [walletAccount, setWalletAccount] = useState('');
+function ConnectWallet(props) {
 
   const createDroppleIdHandler = async () => {
     const provider = window.ethereum;
     const accounts = await provider.request({ method: "eth_requestAccounts" });
     const account = accounts[0];
 
-    setWalletAccount(() => account);
+    props.walletAddressHandler(account);
+    props.droppleStateHandler(2);
   }
 
   return (

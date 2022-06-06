@@ -24,6 +24,10 @@ code {
   font-size: 16px;
 }
 
+.margin-top-10 {
+  margin-top: 10px
+}
+
 .dropple-button {
   width: 175px;
   height: 125px;
@@ -74,6 +78,7 @@ code {
   border: 1px solid #BABBBF;
   font-size: 16px;
   text-align: left;
+  margin: 0 auto;
 }
 
 .dropple-table th, .dropple-table td{
@@ -84,6 +89,10 @@ code {
   border-bottom: 1px solid #BABBBF;
 }
 
-.dropple-table th {
+.dropple-table tr th {
   background: #F0F1F2;
+}
+
+.dropple-table tr td:not(:last-child), .dropple-table tr th:not(:last-child) {
+  border-right: 1px solid #dbdbdb;
 }

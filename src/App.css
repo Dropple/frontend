@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: end;
 }
 
 .App-section {
@@ -18,5 +19,12 @@
   /* height: calc(100vh - 150px); */
   background: #fafafa;
   border-radius: 10px 10px 0 0;
-  padding: 64px 168px;
+  padding: 64px 50px;
+}
+
+.wallet-address {
+  background: #fafafa;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
 }
